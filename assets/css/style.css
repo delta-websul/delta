@@ -49,6 +49,7 @@
 /*----------------------------------------*/
 /*-- Google Font --*/
 @import url("https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Playfair+Display:400,400i&amp;display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 /*-- Common Style --*/
 *,
 *::after,
@@ -70,7 +71,8 @@ body {
   font-style: normal;
   font-weight: normal;
   visibility: visible;
-  font-family: "Arimo", sans-serif;
+  /* font-family: "Arimo", sans-serif; */
+  font-family: 'Belleza', sans-serif !important;
   color: #4d4d4d;
   position: relative;
 }
@@ -283,19 +285,32 @@ img {
 .height-150 {
   height: 150px;
 }
+
+.height-500 {
+  height: 500px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .height-150 {
     height: 100px;
+  }
+  .height-500 {
+    height: 350px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .height-150 {
     height: 100px;
   }
+  .height-500 {
+    height: 350px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .height-150 {
     height: 100px;
+  }
+  .height-500 {
+    height: 350px;
   }
 }
 
@@ -978,6 +993,7 @@ textarea:-ms-input-placeholder {
   line-height: 64px;
   margin-bottom: 30px;
   position: relative;
+  font-family: 'Belleza', sans-serif;
 }
 .section-title-four h2::before {
   content: "";
@@ -2440,19 +2456,20 @@ header.header.is-sticky .main-menu.main-menu-two {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-absolute {
     position: static !important;
-    background: #ffffff !important;
+    /* background: #ffffff !important; */
+    background: #0000001a !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-absolute {
     position: static !important;
-    background: #ffffff !important;
+    background: #0000001a !important;
   }
 }
 @media only screen and (max-width: 767px) {
   .header-absolute {
     position: static !important;
-    background: #ffffff !important;
+    background: #0000001a !important;
   }
 }
 
@@ -3787,17 +3804,19 @@ header.draven-minisidebar .menu-primary-menu-1 li.has-label--3 a {
   font-weight: 400;
   font-size: 50px;
   line-height: 50px;
-/* identical to box height, or 100% */
-  color: #D7CBB7;
+  /* identical to box height, or 100% */
+  color: #d7cbb7;
 }
 
 .newheading-section h4 {
   font-weight: 400;
   font-size: 46px;
   line-height: 46px;
-/* identical to box height, or 100% */
+  /* identical to box height, or 100% */
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 40px;
+  font-family: 'Belleza', sans-serif;
 }
 
 /*----------------------------------------*/
@@ -4563,12 +4582,16 @@ header.draven-minisidebar .menu-primary-menu-1 li.has-label--3 a {
     text-align: center;
   }
 }
+.modern-decorate-banner-content {
+  text-align: center;
+}
 .modern-decorate-banner-content h2 {
   font-size: 56px;
   font-weight: 400;
   line-height: 74px;
   color: #ffffff;
-  margin-left: 160px;
+  text-align: center;
+  font-family: 'Belleza', sans-serif;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {
   .modern-decorate-banner-content h2 {
@@ -4598,7 +4621,7 @@ header.draven-minisidebar .menu-primary-menu-1 li.has-label--3 a {
 }
 .modern-decorate-banner-content .shop-btn {
   margin-top: 20px;
-  margin-left: 160px;
+  /* margin-left: 160px; */
 }
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {
   .modern-decorate-banner-content .shop-btn {
@@ -5832,10 +5855,36 @@ header.draven-minisidebar .menu-primary-menu-1 li.has-label--3 a {
   .made-banner-content p {
     margin-bottom: 40px;
   }
+  .newheading-section p {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    color: #d7cbb7;
+  }
+  .newheading-section h4 {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 40px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .made-banner-content p {
     margin-bottom: 30px;
+  }
+  .newheading-section p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 50px;
+    color: #d7cbb7;
+  }
+  .newheading-section h4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
   }
 }
 
@@ -5920,6 +5969,7 @@ header.draven-minisidebar .menu-primary-menu-1 li.has-label--3 a {
   letter-spacing: 1px;
   color: #ffffff;
   margin: 0px 0px 20px 0px;
+  font-family: 'Belleza', sans-serif;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {
   .single-categories-banner .banner-content .title {
@@ -7177,7 +7227,7 @@ header.draven-minisidebar .menu-primary-menu-1 li.has-label--3 a {
   color: silver;
 }
 .menu-primary-menu-1 li a:hover {
-  color: #fc4f4f;
+  color: #b59175;
 }
 .menu-primary-menu-1 li.has-dropdown-menu > a {
   position: relative;
@@ -7194,7 +7244,7 @@ header.draven-minisidebar .menu-primary-menu-1 li.has-label--3 a {
   width: 50px;
 }
 .menu-primary-menu-1 li.has-dropdown-menu > a.is-visiable {
-  color: #fc4f4f;
+  color: #b59175;
 }
 .menu-primary-menu-1 li.has-dropdown-menu > a.is-visiable::after {
   content: "";
@@ -7596,7 +7646,7 @@ body.loaded .la-image-loading {
 .bounce1,
 .bounce2,
 .bounce3 {
-  background-color: #fc4f4f;
+  background-color: #b59175;
 }
 
 /*----------------------------------------*/
